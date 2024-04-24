@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <script src="./css/js/cadastrar.js" defer></script>
+
+    <title>Personagem</title>
+</head>
+<body>
+
+    <h2>Criando Personagem</h2>
+
+    <form action="">
+
+        <div class="nes-field"> 
+            <label for="titulo">Nome</label>
+            <input type="text" id="titulo" class="nes-input">
+            <span id="titulo-error" class="nes-text is-error"></span>
+        </div>
+
+        <div>
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" class="nes-textarea"></textarea>
+            <span id="descricao-error" class="nes-text is-error"></span>
+        </div>
+
+        <label for="raca">Raças</label>
+            <div class="nes-select">
+                <select required id="raca">
+                    <option value="" disabled selected hidden>Selecione...</option>
+                    <option value="Elfo">Elfo</option>
+                    <option value="Humano">Humano</option>
+                    <option value="Anões">Anões</option>
+                    <option value="Gnomos">Gnomos</option>
+                    <option value="Orcs">Orcs</option>
+                    <option value="Trolls">Trolls</option>
+                    <option value="Hobbits">Hobbits</option>
+                </select>
+                
+                <span id="raca-error" class="nes-text is-error"></span>
+            </div>
+
+        <label for="classe">Classes</label>
+            <div class="nes-select">
+                <select required id="classe">
+                    <option value="" disabled selected hidden>Selecione...</option>
+                    <option value="Bárbaro">Bárbaro</option>
+                    <option value="Bardo">Bardo</option>
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Ladino">Ladino</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
+                    <option value="Clérigo">Clérigo</option>
+                    <option value="Paladino">Paladino</option>
+                </select>
+                
+                <span id="classe-error" class="nes-text is-error"></span>
+            </div>
+
+        <label for="habilidade">Habilidades</label>
+            <div class="nes-select">
+                <select required id="habilidade">
+                    <option value="" disabled selected hidden>Selecione...</option>
+                    <option value="Força">Força</option>
+                    <option value="Destreza">Destreza</option>
+                    <option value="Inteligência">Inteligência</option>
+                    <option value="Sabedoria">Sabedoria</option>
+                    <option value="Carisma">Carisma</option>
+                    <option value="Constituição">Constituição</option>
+                </select>
+                
+                <span id="habilidade-error" class="nes-text is-error"></span>
+            </div>
+
+            <div class="nes-field">
+                <label for="score">Quantidade de XP</label>
+                <input type="number" id="score" class="nes-input">
+                <span id="score-error" class="nes-text is-error"></span>
+            </div>
+
+        <div>
+
+            <label for="">Sexo</label>
+    
+            <label>
+                <input type="radio" class="nes-radio" name="answer" checked />
+                <span>Masculino</span>
+            </label>
+              
+            <label>
+                <input type="radio" class="nes-radio" name="answer" />
+                <span>Feminino</span>
+            </label>
+
+        </div>
+
+        
+        <div class="botoes">
+            <a class="nes-btn" href="./index.html">Cancelar</a>
+            <button id="botao-cadastrar" class="nes-btn is-primary" href="./index.html">Inserir</button>
+        </div>
+
+
+    </form>
+
+
+</body>
+
+<html>
